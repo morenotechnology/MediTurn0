@@ -1,0 +1,217 @@
+// Estilos compartidos
+.notificacionContent {
+  flex: 1;
+  
+  h4 {
+    margin: 0 0 0.3rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  p {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .fecha {
+    font-size: 0.75rem;
+    color: #999;
+  }
+}
+
+.marcarLeida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2d6cdf;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.emptyState {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.marcarLeidas {
+  background: none;
+  border: none;
+  color: #2d6cdf;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.notificacionItem {
+  padding: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: #f9f9f9;
+  }
+  
+  &.noLeida {
+    background-color: #f0f7ff;
+    
+    &:hover {
+      background-color: #e5f1ff;
+    }
+  }
+}
+
+// Variante de icono (para navbar)
+.notificacionesContainer {
+  position: relative;
+}
+
+.notificacionesIcon {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #2d6cdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: rgba(45, 108, 223, 0.1);
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f44336;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificacionesPanel {
+  position: absolute;
+  top: 100%;
+  right: -10px;
+  width: 320px;
+  max-height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  overflow: hidden;
+  margin-top: 10px;
+  animation: slideDown 0.2s ease-out;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    transform: rotate(45deg);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.notificacionesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+}
+
+.notificacionesList {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Variante de panel (para página completa)
+.panelContainer {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  
+  h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+  }
+}
+
+.panelActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.panelContent {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.testButton {
+  background-color: #f5f5f5;
+  border: none;
+  color: #666;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
