@@ -1,0 +1,49 @@
+# MediTurn
+
+**MediTurn** es una aplicación web para la gestión de turnos médicos en tiempo real dentro de una institución de salud. Fue desarrollada con el propósito de optimizar el manejo de citas y brindar una experiencia más eficiente tanto para el personal como para los pacientes.
+
+---
+
+## ¿Qué hace MediTurn?
+
+- Permite organizar y visualizar turnos médicos por fecha, especialidad y profesional.
+- Evita conflictos en las asignaciones gracias a un sistema centralizado.
+- Mejora la eficiencia en la atención al reducir tiempos de espera y errores administrativos.
+
+---
+
+## ¿Quién administra MediTurn?
+
+La gestión de turnos está a cargo de un **usuario administrador**.  
+Este administrador es el único autorizado para atender los turnos médicos dentro del sistema.
+
+- **ID del administrador principal:** `1109116805`
+
+---
+
+## Funcionalidades del administrador
+
+- Visualizar el estado de todos los turnos del día.
+- Reiniciar Sistema
+- Atender Pacientes
+
+---
+
+## Justificación del sistema
+
+MediTurn responde a la necesidad de contar con una herramienta digital que centralice la asignación de citas médicas, evitando así la duplicidad de turnos, la saturación de agendas y la falta de trazabilidad en los procesos administrativos del área de salud.
+
+---
+
+## Tecnología utilizada
+
+- React + Vite (Frontend)
+- CustomTkinter (para prototipo de escritorio)
+- Firebase / Node.js (según versión de backend)
+- GitHub para control de versiones
+
+---
+
+## Autor
+
+Desarrollado por Samuel Moreno para uso académico.
