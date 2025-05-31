@@ -9,6 +9,12 @@ Figma: https://www.figma.com/proto/bbnbfaF3KNZZPXc2KuyeT8/Dashboard-Login--Commu
 Repositorio: https://github.com/morenotechnology/MediTurn0/
 Despliegue: https://mitienda.cfd/
 
+Antes de desplejar el programa, debes de instalar los siguiente en tu entorno de trabajo:
+npm install firebase
+npm install react-router-dom
+npm install react-icons
+npm install sass
+
 # Manual de Usuario - MediTurn
 
 ## Descripción General
