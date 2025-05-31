@@ -1,0 +1,138 @@
+.container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+
+  h2 {
+    color: #2d6cdf;
+    margin-bottom: 2rem;
+  }
+
+  .turnoActual {
+    margin-bottom: 1.5rem;
+
+    h4 {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2d6cdf;
+    }
+  }
+
+  .cola {
+    margin-bottom: 2rem;
+
+    h4 {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+
+      li {
+        background-color: #e0e7f5;
+        color: #2d6cdf;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: #888;
+    }
+  }
+
+  .button {
+    background-color: #2d6cdf;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:disabled {
+      background-color: #cdd9ec;
+      cursor: not-allowed;
+    }
+
+    &:hover:enabled {
+      background-color: #1f4fa2;
+    }
+  }
+}
+.panel {
+  font-family: 'Inter', sans-serif;
+
+  .cardGrid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cardItem {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 180px;
+    justify-content: center;
+
+    .icon {
+      font-size: 1.8rem;
+      color: #2d6cdf;
+    }
+
+    .label {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .value {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #2d6cdf;
+    }
+  }
+
+  .resetButton {
+    background-color: #f44336;
+    color: white;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}

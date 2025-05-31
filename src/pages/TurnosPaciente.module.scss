@@ -1,0 +1,254 @@
+.dashboard {
+  padding: 2rem;
+  background: linear-gradient(to right, #f4f7ff, #eaf1fb);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+  h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+}
+
+.headerActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  .stat {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+
+    p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.3rem;
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2d6cdf;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .nuevo {
+    background: #3dc86f;
+    color: white;
+
+    &:hover:not(:disabled) {
+      background: #33b060;
+    }
+
+    &:disabled {
+      background: #b5e1c7;
+      cursor: not-allowed;
+    }
+  }
+
+  .historial {
+    background: #6c63ff;
+    color: white;
+
+    &:hover {
+      background: #5a52d5;
+    }
+  }
+}
+
+.progressBar {
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.progressInner {
+  height: 100%;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border-radius: 4px;
+  transition: width 1s linear;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #eee;
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+}
+
+.turnoEstado {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  
+  &[data-estado="pendiente"] {
+    background-color: #fff8e1;
+    color: #f57c00;
+  }
+  
+  &[data-estado="atendido"] {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  &[data-estado="cancelado"] {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  &[data-estado="en_proceso"] {
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+  }
+
+  p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+}
+
+.timeBox {
+  background: #6c63ff;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  gap: 1rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    flex: 1;
+  }
+
+  .editButton {
+    background-color: #2d6cdf;
+    color: white;
+
+    &:hover {
+      background-color: #1f4fa2;
+    }
+  }
+
+  .cancelButton {
+    background-color: #f44336;
+    color: white;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .cardInfo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .timeBox {
+    align-self: flex-start;
+  }
+
+  .cardActions {
+    flex-direction: column;
+  }
+}
